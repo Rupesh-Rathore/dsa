@@ -11,7 +11,7 @@ public class FirstNLastElementPosition {
     static int[] firLasPosSortArr(int nums[], int target){
 
         int start = 0, end = nums.length-1;
-        int firstPosition = -1,lastPosition = -1;
+        int[] ans = {-1,-1};
 
         // for first occurence - 
         while (start <= end){
@@ -28,7 +28,7 @@ public class FirstNLastElementPosition {
                     end = middle - 1;
                 }
                 else{
-                    firstPosition = middle;
+                    ans[0] = middle;
                     break;
                 }
             }
@@ -51,12 +51,12 @@ public class FirstNLastElementPosition {
                     start = middle + 1;
                 }
                 else{
-                    lastPosition = middle;
+                    ans[1] = middle;
                     break;
                 }
             }
         }
 
-        return(new int[]{firstPosition,lastPosition});
+        return(ans);
     }
 }
