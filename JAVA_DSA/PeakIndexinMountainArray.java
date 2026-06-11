@@ -6,6 +6,10 @@ public class PeakIndexinMountainArray {
         System.out.println("peak of arr is at -> "+peakIndexInMountainArray(arr));
     }
 
+/*
+
+static int 
+*/
     static int peakIndexInMountainArray(int[] arr){
 
         // ! Brute-force approach - > Traverse the array
