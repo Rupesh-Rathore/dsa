@@ -1,4 +1,4 @@
-package JAVA_DSA;
+package JAVA_DSA.twoPointers;
 
 // Imports
 import java.util.Scanner;

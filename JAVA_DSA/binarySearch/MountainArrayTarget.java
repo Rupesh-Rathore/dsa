@@ -1,3 +1,4 @@
+package JAVA_DSA.binarySearch;
 // // * LEETCODE PROBLEM NO 1095 
 
 // class Solution {

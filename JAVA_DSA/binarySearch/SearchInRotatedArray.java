@@ -1,4 +1,4 @@
-package JAVA_DSA;
+package JAVA_DSA.binarySearch;
 
 public class SearchInRotatedArray {
     public static void main(String[] args) {
