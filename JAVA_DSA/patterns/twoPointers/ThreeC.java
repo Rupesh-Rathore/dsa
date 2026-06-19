@@ -1,4 +1,4 @@
-package JAVA_DSA.twoPointers;
+package JAVA_DSA.patterns.twoPointers;
 
 import java.util.Arrays;
 import java.lang.Math;

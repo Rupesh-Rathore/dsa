@@ -10,13 +10,13 @@ public class Bubble {
         System.out.println(Arrays.toString(nums));
     }
 
-    static void bubbleSort(int[] arr){
+    static void bubbleSort(int[] nums){
         boolean swapped;
-        for(int i = 0; i < arr.length - 1; i++){
+        for(int i = 0; i < nums.length - 1; i++){
             swapped = false;
-            for( int j = 0; j < arr.length - 1 - i; j++){
-                if (arr[j] > arr[j+1]){
-                    swap(arr, j, j+1);
+            for( int j = 0; j < nums.length - 1 - i; j++){
+                if (nums[j] > nums[j+1]){
+                    swap(nums, j, j+1);
                     swapped = true;
                 }
             }

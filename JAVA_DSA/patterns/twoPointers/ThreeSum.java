@@ -1,4 +1,4 @@
-package JAVA_DSA.twoPointers;
+package JAVA_DSA.patterns.twoPointers;
 
 // import java.lang.reflect.Array;
 import java.util.ArrayList;

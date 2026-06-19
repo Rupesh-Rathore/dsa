@@ -10,15 +10,15 @@ public class Selection {
         System.out.println(Arrays.toString(nums));
     }
 
-    static void selectionSort(int[] arr){
-        for(int i = 0; i < arr.length - 1; i++){
+    static void selectionSort(int[] nums){
+        for(int i = 0; i < nums.length - 1; i++){
             int maxValIndex = 0;
-            for (int j = 0 ; j <= arr.length - 1 - i;j++){
-                if( arr[j] > arr[maxValIndex]){
+            for (int j = 0 ; j <= nums.length - 1 - i;j++){
+                if( nums[j] > nums[maxValIndex]){
                     maxValIndex = j;
                 }
             }
-            swap(arr, maxValIndex, arr.length - 1 - i);
+            swap(nums, maxValIndex, nums.length - 1 - i);
         }
     }
 
