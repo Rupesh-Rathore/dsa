@@ -1,4 +1,4 @@
-package JAVA_DSA.sorting;
+package JAVA_DSA.sorting.algos;
 
 import java.util.Arrays;
 

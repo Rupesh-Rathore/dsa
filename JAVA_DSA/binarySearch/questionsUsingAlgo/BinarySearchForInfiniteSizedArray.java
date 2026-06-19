@@ -1,4 +1,4 @@
-package JAVA_DSA.binarySearch;
+package JAVA_DSA.binarySearch.questionsUsingAlgo;
 
 public class BinarySearchForInfiniteSizedArray {
     public static void main(String[] args) {
