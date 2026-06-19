@@ -6,25 +6,25 @@ import java.util.List;
 
 public class AllTheMissingElem {
     public static void main(String[] args) {
-        int nums[] = {4,3,2,7,8,2,3,1};
-        System.out.println(findDisappearedNumbers(nums));
+        int arr[] = {4,3,2,7,8,2,3,1};
+        System.out.println(findDisappearedNumbers(arr));
     }
-    public static List<Integer> findDisappearedNumbers(int[] nums) {
+    public static List<Integer> findDisappearedNumbers(int[] arr) {
         int i = 0;
-        while (i < nums.length) {
-            int correct = nums[i] - 1;
-            if (nums[i] != nums[correct]) {
-                swap(nums, i, correct);
+        while (i < arr.length) {
+            int correct = arr[i] - 1;
+            if (arr[i] != arr[correct]) {
+                swap(arr, i, correct);
             } else {
                 i++;
             }
         }
 
-        System.out.println(Arrays.toString(nums));
+        System.out.println(Arrays.toString(arr));
 
         List<Integer> result = new ArrayList<>();
-        for (int j = 0; j < nums.length; j++) {
-            if (nums[j] - 1 != j){
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] - 1 != j){
                 result.add(j+1);
             }
         }
