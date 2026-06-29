@@ -1,0 +1,22 @@
+​‌‍‌⁡⁣⁢⁣𝘛𝘐𝘔𝘌 𝘊𝘖𝘔𝘗𝘓𝘌𝘟𝘐𝘛𝘠​⁡
+
+⁡⁣⁢⁢▻Missconceptions⁡
+
+→ Time complexity != Total time taken in the execution of a program.
+→ If two different machines takes different amount of time while executing same algorithm with exact same condition → then that does not mean they have different time complexity → rather both the machines will have same time complexity.
+    → Faster machine does not implies better time complexity.
+
+⁡⁣⁢⁢▻Definition⁡
+
+→ Time-complexity is a ⁡⁢⁣⁣mathemetical function⁡ that gives us the ⁡⁢⁣⁣relationship⁡ about how ⁡⁢⁣⁣𝙏𝙄𝙈𝙀⁡ is going to grow⁡ as ⁣⁣𝙄𝙉𝙋𝙐𝙏⁡ grows.
+→ Time-complexity is a ⁡⁢⁣⁣graph/function⁡ that repesents the rate of change ⁡⁢⁣⁣𝙏𝙄𝙈𝙀⁡ required w.r.t ⁡⁢⁣⁣𝙎𝙄𝙕𝙀⁡ of ⁡⁢⁣⁣𝙄𝙉𝙋𝙐𝙏⁡.
+
+⁡⁣⁢⁢▻Why does it matter ? ⁡
+
+→ With the help of the two searching algos. ⁡⁢⁣⁣Linear search⁡ and ⁡⁢⁣⁣Binary search⁡ i will explain the need for time complexity and its study,
+    → Binary-search⁡ time cpmplexity - O(log N) → no. of ALU visits for input size N.
+    → Linear-search⁡ time complexity - O(N) → no. of ALU visits for input size N.
+
+    → For larger number (N) the binary search takes less time as compared  to linear search i.e. Binary search is better to use. 
+    THIS COMPARETIVE STYUDY TO EVALUATE AND UNDERSTAND ALGORIYMS IS WHAT MAKES TIME COMPLEXITY VERY RELEVENT.
+→ IMP → We do not care abouit small numbers we always evalute and judge w.r.t larger size.

@@ -1,0 +1,73 @@
+    ​‌‌‍‍⁡⁣⁢⁣𝘍𝘶𝘯𝘤𝘵𝘪𝘰𝘯 𝘤𝘢𝘭𝘭𝘴 𝘢𝘯𝘥 𝘮𝘦𝘮𝘦𝘰𝘳𝘺 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵⁡ ⁡⁣⁢⁣‍& 𝘙𝘌𝘊𝘜𝘙𝘚𝘐𝘖𝘕⁡​
+
+    - ⁡⁢⁣⁣Stack⁡ memeory is used for this.
+    - ⁡⁢⁣⁣main⁡ function is called first any program ( goes first in the stack and comes out last from the tack - ⁡⁢⁣⁣FILO( First-In-Last-Out) ⁡).
+    - ⁡⁣⁣⁢IMP⁡ - While the function is not finished executing , it will remain  in the stack. This means if a function remains in stack , that ⁡⁢⁣⁣function-call⁡ is still going on - either executing or resting in the stack for the completion of execution of the function called by this function.
+    - ⁡⁣⁣⁢IMP⁡ - when a function finishes executing , it is removed from the stack and flow of the program is restored to where that function was called
+
+
+    - Program's stack memory for function call and primitives of these function calls
+        |           |
+        |           |   Block - 2
+        |___________|
+        |           |
+        |           |   Block - 1
+        |___________|
+        |-Primitives|
+        |  of main  |   block - 0
+        |-__⁡⁢⁣⁣main()⁡__|⁡
+            ⁡⁣⁢⁢​‌‍‌𝘚𝘵𝘢𝘤𝘬​⁡
+
+    ‍‍⁡⁣⁢⁢Definition⁡ 
+    
+    - Recursion means a ⁡⁢⁣⁣function⁡ calling ⁡⁢⁣⁡⁢⁣⁣𝗶𝘁𝘀𝗲𝗹𝗳⁡.
+    - ⁡⁢⁣⁣Base_condition⁡ - condition where recursion will stop making new calls.( generally a simple ⁡⁢⁣⁣if-condition⁡).
+    - No base-condition -> function calls will keep happening , stack will be filled again and again < if no base condition is given the function will keep on calling it self -> then the stack will be filled > - ⁡⁢⁣⁣Memory of the computer will exceed the limit⁡ - > ⁡⁣⁣⁢Stack-Overflow-Error⁡
+    - If you call a function again and again , you can treat each as a seperate function call in a stack.
+    
+    ⁡⁣⁢⁢Why Recursion⁡ 
+    
+    - It helps us in solving bigger / complex problems in a simpler way by breaking it down in smaller more manageable problems.
+    - You can convert recursion solution into iterative solution and vice-versa.
+    - Space complexity is not constant because of recursive calls.
+
+    ⁡⁣⁢⁢Visualising Recursion (⁡⁣⁣⁢VVVVVVIMP⁡⁣⁢⁢)⁡⁡
+
+                        ⁡⁢⁢⁢Program⁡
+    ⁡⁢⁣⁢program⁡  [main()]   ⁡⁢⁢⁢over⁡   
+    ⁡⁢⁣⁢start⁡   ⁡⁢⁣⁢↙⁡       ⁡⁢⁢⁢↖⁡
+            ⁡⁢⁣⁢↓⁡        ⁡⁢⁢⁢↑⁡
+            ⁡⁢⁣⁢↘⁡       ⁡⁢⁢⁢↗⁡
+            [func1(1)]          
+            ⁡⁢⁣⁢↙⁡       ⁡⁢⁢⁢↖⁡
+            ⁡⁢⁣⁢↓⁡        ⁡⁢⁢⁢↑⁡         ⁡⁣⁢⁢ Recursive Tree⁡
+            ⁡⁢⁣⁢↘⁡       ⁡⁢⁢⁢↗⁡
+            [func1(2)]
+            ⁡⁢⁣⁢↙⁡       ⁡⁢⁢⁢↖⁡
+            ⁡⁢⁣⁢↓⁡        ⁡⁢⁢⁢↑⁡
+            ⁡⁢⁣⁢↘⁡       ⁡⁢⁢⁢↗⁡
+            [func1(3)]
+
+    ​‌‍‌⁡⁣⁢⁡⁣⁢⁢‍Recurrence Relation⁡⁡
+    
+    - Representing the solution or recursive approach for a problem in the form of a ⁡⁢⁣⁣Mathemetical expression⁡ is called ⁡⁢⁣⁣Recurrence Relation⁡.
+    - Types of recurrence realtion →
+        - Linear recurrence relation → flow like n then n-1 → fibo ←
+        - Divide & Conquere recurrence relation → flow like n then n/2 → binary search ←
+
+    ⁡⁣⁢⁢How solve any Problem using Recursion -⁡
+
+    Steps-
+    - Identify if you can break down the problem into samller problems.
+    - Write the Recurrence relation if needed.
+    - Draw the recursive tree.
+    - About the tree:
+        -See the flow of functions, how they are getting in stack.
+        - Identify & focus on left tree calls and then right.
+        - Draw the tree and pointer again again using pen and paper.
+    - See how the values are returned at each step, see where the function call will come out , In the end , uou will come out of the main.
+
+    Imp 
+    - When a function has a return type make sure you return it.
+    - Make sure you return what a sub function call returns.
+    - make sure to return sub function call if a return type is specified.

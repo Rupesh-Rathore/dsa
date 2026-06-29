@@ -26,15 +26,10 @@ public class LongestSubstringWithKUniques {
             }
             if(frequency.size() == k){
                 int len = high - low + 1;
-                maxLen = max(maxLen, len);
+                maxLen = Math.max(maxLen, len);
             }
         }
 
         return (maxLen == Integer.MIN_VALUE) ? -1 : maxLen;
-    }
-    
-    public static int max(int a,int b){
-        if(a > b) return a;
-        else return b;
     }
 }
