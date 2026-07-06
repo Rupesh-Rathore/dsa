@@ -1,4 +1,4 @@
-package JAVA_DSA.recursion;
+package JAVA_DSA.recursion.basic;
 
 public class BinarySearch {
     static int binarySearch(int[] arr, int target, int start, int end){

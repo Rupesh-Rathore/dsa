@@ -1,6 +1,6 @@
 package JAVA_DSA.maths;
 
-public class MathForDSA {
+public class NonRepeatedNumberInArray {
     // Problem - An aaray of integers is given and all the numbers in the array are repeated exactly twice except one number find that number.⁡ (in O(n) time complexity and O(1) space complexity(aux))
 
     public static void main(String[] args) {
@@ -22,5 +22,4 @@ public class MathForDSA {
         }
         return (res == 0 )? -1 : res;
     }
-
 }

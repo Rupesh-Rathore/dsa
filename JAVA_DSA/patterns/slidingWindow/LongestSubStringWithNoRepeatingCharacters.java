@@ -27,9 +27,9 @@ public class LongestSubStringWithNoRepeatingCharacters {
         return (maxLen == Integer.MIN_VALUE) ? 0 : maxLen;
     }
 
-        public static int lengthOfLongestSubstringBetter(String s) {
+    //     public static int lengthOfLongestSubstringBetter(String s) {
 
-    }
+    // }
     static boolean uniqueSubstringOrNot(HashMap<Character,Integer> stringMap){
         int count = 0;
         for (Integer i : stringMap.values()) {
