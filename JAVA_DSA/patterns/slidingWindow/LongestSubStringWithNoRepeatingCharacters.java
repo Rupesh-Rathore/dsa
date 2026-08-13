@@ -10,12 +10,18 @@ public class LongestSubStringWithNoRepeatingCharacters {
     }
 
     public static int lengthOfLongestSubstring(String s) {
+
         int low = 0, high, sizeOfStringS = s.length(), maxLen = Integer.MIN_VALUE;
+
         HashMap<Character,Integer> stringMap = new HashMap<>();
+
         for( high = 0; high < sizeOfStringS; high++){
+
             stringMap.put(s.charAt(high), stringMap.getOrDefault(s.charAt(high), 0) + 1);
+
             while (!uniqueSubstringOrNot(stringMap)){
                 stringMap.put(s.charAt(low) , stringMap.get(s.charAt(low)) - 1);
+                
                 if(stringMap.get(s.charAt(low)) == 0){
                     stringMap.remove(s.charAt(low));
                 }
