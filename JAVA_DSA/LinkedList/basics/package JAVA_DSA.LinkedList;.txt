@@ -12,9 +12,9 @@ public class CustomSinglyLinkedList {
         this.size = 0;
     }
 
-    // ⁡⁢⁣⁣METHODS⁡ 
+    // METHODS⁡ 
 
-    // ⁡⁣⁣⁡⁣⁣⁢Insertion-Methods⁡
+    // Insertion-Methods⁡
     
     public void insertFirst(int val){
         // method to insert at the start of the linkedList
@@ -75,7 +75,7 @@ public class CustomSinglyLinkedList {
         size++;
     }
 
-    // ⁡⁣⁣⁢Deletion-Methods⁡
+    // Deletion-Methods⁡
 
     public int removeFirst(){
         // method to remove or delete first node/element of the linked list
@@ -112,7 +112,7 @@ public class CustomSinglyLinkedList {
         return deletedVal;
     }
 
-    // ⁡⁣⁣⁢Access-methods⁡
+    // Access-methods⁡
 
     public Node get(int index) {
         // method to get reference to any node via index
@@ -124,7 +124,29 @@ public class CustomSinglyLinkedList {
         return node;
     }
     
-    // ⁡⁣⁣⁡⁣⁣⁢Dispaly-methods⁡
+    public int valueAt(int index) {
+        // method to return value of the node at the given index
+        return get(index).val;
+    }
+
+    public Node find(int value) {
+        // method that returns the node that has the val == value , if not fount returns null
+        Node node = head;
+        while (node != null) {
+            if (node.val == value) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
+    public int size(){
+        // method to return size of the linked list
+        return size;
+    }
+    
+    // Dispaly-methods⁡
 
     public void display(){
         // method to display the linked list

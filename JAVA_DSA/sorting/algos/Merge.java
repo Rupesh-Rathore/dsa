@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Merge {
     /*
-    ▢ Theory ->
+    ⁡⁢⁣⁣▢ Theory ->
 
     ▹ Based on Recursion (Back-bone).
     ▹ Merge sort basicalyy works on the principle ->
@@ -50,7 +50,7 @@ public class Merge {
         ▹ Return the merged array.
 
     ▢ Time complexity of the merge sort is O( NlogN )
-    ▢ Space complexity of the merge4 sort is O( N )
+    ▢ Space complexity of the merge4 sort is O( N )⁡
     */
     public static void main(String[] args) {
         int []nums = { 9 , 8 , 7, 6 , 5, 4 , 3 , 2 , 1 , 0 , -1 ,-2 , -3 , -4};
@@ -99,5 +99,6 @@ public class Merge {
         }
 
         return mix;
+        
     }
 }

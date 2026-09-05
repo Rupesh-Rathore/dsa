@@ -1,4 +1,4 @@
-package JAVA_DSA.LinkedList;
+package JAVA_DSA.LinkedList.basics;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Main {
         list.insertLast(5);
         list.insertLast(6);
         list.display();
-        System.out.println(list.remove(2));
+        list.insertRec(0,2);
         list.display();
     }
 }
