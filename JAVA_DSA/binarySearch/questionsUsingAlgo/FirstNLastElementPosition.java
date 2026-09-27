@@ -60,3 +60,39 @@ public class FirstNLastElementPosition {
         return(ans);
     }
 }
+
+/*
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+       int start = 0;
+       int end = nums.length - 1;
+       int targetEx = -1;
+        while ( start <= end ) {
+            int mid =  start + (end - start)/2;
+            if (nums[mid] ==  target) {
+                targetEx = mid;
+                break;
+            }
+            else if(target > nums[mid]) {
+                start = mid + 1;
+            }
+            else{
+                end = mid - 1;
+            }
+        } 
+
+        if (targetEx == -1) {
+            return new int[] {-1,-1};
+        }
+        start = targetEx;
+        end = targetEx;
+        while (start >= 0 && nums[start] == target) {
+            start--;
+        }
+        while(end <= nums.length - 1 && nums[end] == target){
+            end++;
+        }
+        return new int[] {start + 1,end - 1};
+    }
+}
+*/

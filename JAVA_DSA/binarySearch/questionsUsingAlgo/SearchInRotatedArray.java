@@ -46,7 +46,7 @@ public class SearchInRotatedArray {
 
     // ! when duplicates are allowed ->
     static int pivotIndexDupli(int nums[]){
-                int start = 0, end = nums.length - 1;
+        int start = 0, end = nums.length - 1;
         while (start <= end){
             int mid =  start + ( end - start ) / 2;
             if (mid < end && nums[mid] > nums[mid+1]){

@@ -17,7 +17,7 @@ public class SearchInMatrix {
             {9,10,11,12},
             {13,14,15,16},
         };
-        System.out.println(Arrays.toString(searchInStrictlySortedMatrix(matrix, 17)));
+        System.out.println(Arrays.toString(searchInStrictlySortedMatrix(matrix, 11)));
     }
     
 
@@ -31,7 +31,7 @@ public class SearchInMatrix {
     |   8   16  32  64  128
     |   16  32  64  128 256
     v
-    * each row and column is sorted , which means the m,atrix does not follow strict sorted pattern where( including the current properties ) a new property which implies each row's first element is >= previous row' last element.
+    * each row and column is sorted , which means the matrix does not follow strict sorted pattern where( including the current properties ) a new property which implies each row's first element is >= previous row' last element.
     */
         int lowerBound = 0;
         int upperBound = matrix[0].length-1;
