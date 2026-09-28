@@ -31,6 +31,8 @@ public class Quick {
                 e--;
             }
         }
+        System.out.printf("m -> %d , s -> %d , e -> %d",m,s,e);
+        System.out.println();
         quickSort(nums, low, e);
         quickSort(nums, s, high);
     }
